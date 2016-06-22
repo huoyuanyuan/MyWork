@@ -1,0 +1,20 @@
+
+#content{
+    width:650px;
+    height:400px;
+    margin:0 auto;
+}
+ul li{
+    list-style: none;
+}
+
+ul li p{
+    display:inline-block;
+}
+
+#promptBox{
+    width:300px;
+    height: 30px;
+    margin-left:20px;
+}
+
