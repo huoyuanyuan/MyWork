@@ -1,0 +1,291 @@
+a:hover{
+    text-decoration: none;
+}
+/*导航部分*/
+#sidebarcontaine{
+    display: none;
+    width:800px;
+    height:700px;
+    position:absolute;
+    top:0px;left:0px;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5);
+}
+#sidebar{
+    width:300px;
+    height: 700px;
+    background-color: white;
+    position: relative;
+}
+#sidebar .btn{
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+#sidebar .btn a{
+    padding: 23px 55px;
+    background-color: red;
+    font-size: 20px;
+    color:white;
+}
+#sidebar .right{
+    margin-left: -4px;
+
+    border-left: 1px solid black;
+}
+#sidebar ul{
+    position:absolute;
+    top:100px;
+    left:30px;
+}
+#sidebar li{
+    display: block;
+    margin-top:20px;
+}
+#sidebar li a{
+    color:#5e5e5e;
+    font-size: 20px;
+}
+#sidebar li .red{
+    color:red;
+}
+/*导航公共部分*/
+nav{
+    overflow: auto;
+}
+#leftbtn{
+    display: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+nav .link-nav a{
+    font-size:14px;
+    text-align: center;
+    color:#555;
+    padding:25px 15px;
+    width: 96px;
+}
+
+nav .link-nav .selected{
+    color:red;
+}
+
+nav .link-nav a:hover{
+    background-color: #eee;
+}
+
+nav .search{
+    width:240px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #eee;
+}
+
+nav .search input{
+    background: url(../img/search.png) no-repeat 170px 0px;
+    background-color: #eee;
+    height: 30px;
+    width: 200px;
+    margin-top: 5px;
+    margin-left:20px;
+    border:none;
+    color:#555;
+}
+
+#first-passway{
+    width:150px;
+    height: 40px;
+    border-radius: 40px;
+    border:1px solid red;
+    color:#FD5D5D;
+    line-height: 40px;
+    text-align: center;
+
+}
+nav .action-nav li{
+    width: 70px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+nav .action-nav a{
+    color:#555;
+}
+
+nav .action-nav .btn-join{
+    background-color:#FD5D5D;
+}
+nav .action-nav .btn-join a{
+    color:#fff;
+}
+/*响应式部分*/
+@media (max-width: 690px){
+    #leftbtn{
+        display: block;
+        position: absolute;
+        top:15px;left:20px;
+    }
+    nav .logo{
+        width: 160px;
+        margin:20px auto;
+    }
+    nav .link-nav{
+        display: none;
+    }
+    nav .search{
+        display: none;
+    }
+    #first-passway{
+        display: none;
+    }
+    nav .action-nav{
+        display: none;
+    }
+}
+
+@media (min-width: 690px) and (max-width: 830px){
+    nav .logo{
+        float:left;
+        margin:20px;
+    }
+    nav .link-nav{
+        float: left;
+        margin-top: 22px;
+    }
+    nav .search{
+        position: absolute;
+        top:70px;right:400px;
+    }
+
+    #first-passway{
+        float: right;
+        margin-right: 20px;
+        margin-top:28px;
+    }
+    nav .action-nav{
+        float: right;
+        margin-right: 20px;
+        margin-top: 70px;;
+    }
+}
+
+@media (min-width: 830px) and (max-width: 950px){
+    nav .logo{
+        float:left;
+        margin:20px;
+    }
+    nav .link-nav{
+        float: left;
+        margin-top: 22px;
+    }
+    nav .search{
+        float:left;
+        margin-left: 20px;
+        margin-top:15px;
+    }
+
+    #first-passway{
+        float: right;
+        margin-right: 20px;
+        margin-top:15px;
+    }
+    nav .action-nav{
+        float: right;
+        margin-right: 20px;
+        margin-top: 15px;;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 980px){
+    nav .logo{
+        float:left;
+        margin:20px;
+    }
+    nav .link-nav{
+        float: left;
+        margin-top: 22px;
+    }
+    nav .search{
+        float:left;
+        margin-left: 20px;
+        margin-top:15px;
+    }
+
+    #first-passway{
+        float: right;
+        margin-right: 20px;
+        margin-top:15px;
+    }
+    nav .action-nav{
+        float: right;
+        margin-right: 20px;
+        margin-top: 70px;;
+    }
+}
+
+@media (min-width: 980px) and (max-width: 1180px){
+    nav .logo{
+        float:left;
+        margin:20px;
+    }
+    nav .link-nav{
+        float: left;
+        margin-top: 22px;
+    }
+    nav .search{
+        float:left;
+        margin-left: 20px;
+        margin-top:15px;
+    }
+
+    #first-passway{
+        float: right;
+        margin-right: -130px;
+        margin-top:70px;
+    }
+    nav .action-nav{
+        float: right;
+        margin-right: 20px;
+        margin-top: 15px;;
+    }
+}
+@media (min-width: 1180px) {
+    nav .logo{
+        float:left;
+        margin:20px;
+    }
+    nav .link-nav{
+        float: left;
+        margin-top: 22px;
+    }
+    nav .search{
+        float:left;
+        margin-left: 20px;
+        margin-top:15px;
+    }
+
+    #first-passway{
+        float: right;
+        margin-right: 20px;
+        margin-top:15px;
+    }
+    nav .action-nav{
+        float: right;
+        margin-right: 20px;
+        margin-top: 15px;;
+    }
+
+}
